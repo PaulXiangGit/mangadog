@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>
+    </title>
+    {include file="public:seo_header" /}
+    {include file="public:link_resource" /}
+    <!--分页类-->
+    <script src="/assets/js/common/bootstrap-paginator.min.js"></script>
+    <!--分页类结束-->
+    <!--模板渲染-->
+    <script src="/assets/js/common/template-web.js"></script>
+    <!--模板渲染结束-->
+<body class=" layout-boxed ">
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+{include file="public:return_to_top" /}
+
+<div class="wrapper">
+    <!-- Website Menu -->
+
+    {include file="public:header" /}
+
+    <div class=" container ">
+        <!-- row -->
+        <div class="row">
+            <div class="col-sm-12">
+            </div>
+        </div>
+        <!--/ row -->
+
+        <!-- row -->
+        <div class="row">
+            <div class="col-sm-4 col-sm-push-8">
+                <div class="image-version-sidebar">
+                    <div class="panel panel-default" style="border:1px solid #54c2f3;">
+                        <div class="panel-heading" style="background-color:#54c2f3;">Search Manga By Genres</div>
+                        <div class="panel-body" >
+                            <ul class="list-category">
+                                {volist name="classification_list" id="data"}
+                                <li>
+                                    <a href="{$data.url}"  style="color:#00a1d7;">{$data.name}</a>
+                                </li>
+                                {/volist}
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-8 col-sm-pull-4">
+                <div class="col-sm-12">
+                    <input type="hidden" name="type" value="{$type}" />
+                    <input type="hidden" name="classification" value="{$classification}" />
+                    <input type="hidden" name="artist" value="{$artist}" />
+                    <input type="hidden" name="current_page" value="{$page}" />
+                    <input type="hidden" name="state" value="{$state}" />
+                    <div class="type-content">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <div class="filter-text pull-left">
+                                    {if condition="!empty($classification_text)"}
+                                    {$classification_text}
+                                    {elseif condition="!empty($artist)"/}
+                                    {$artist}
+                                    {else /}
+                                    Top Rank
+                                    {/if}
+                                </div>
+                                <!--
+                                <div class="pull-right">
+                                    Sort by:
+                                    <div id="sort-types" class="btn-group" role="group" data-toggle="buttons">
+
+                                        <div class="btn-group" role="group">
+                                            <label class="btn btn-default">
+                                                <input type="radio" name="sort-type" id="views"> dilihat
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                -->
+                            </div>
+                        </div>
+                        <div class="row cb col-sm-12" id="comic_list" style="min-height:500px;">
+                            <div id="loading-img" style="margin:auto auto;height:175px;width:175px;">
+                            <img src="/assets/img/frontend/common/loading.gif"  />
+                            </div>
+                        </div>
+                        <div class="row col-sm-12" style="padding-left:50px;">
+                            <ul id="pagination">
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <script id="comic_list_tpl" type="text/html">
+            {{each data value i}}
+            <div class="col-sm-6 row-eq-height" style="height:200px;">
+                <div class="media" style="margin-bottom: 20px;">
+                    <div class="media-left">
+                        <a href="/detail/{{value.search_name}}.html" class="comic-cover-border" >
+                            <img class="comic-cover-size" src="{$image_prefix}{{value.image}}" alt="{{value.name}}">
+                        </a>
+                    </div>
+                    <div class="media-body" >
+                        <h5 class="media-heading">
+                            <a href="/detail/{{value.search_name}}.html" class="chart-title md-title" style="color:#54c2f3;">
+                                <strong>{{value.name}}</strong>
+                            </a>
+                        </h5>
+                        <div style="font-size:12px;">
+                            <i class="fa fa-eye"></i> {{value.views}}
+                        </div>
+                        <div style="font-size:12px;">
+                            <span class="label label-success">{{value.state}}</span>
+
+                        </div>
+                        <a href="{{value.main_subject_text.url}}" class="md-title">{{value.main_subject_text.text}}</a>
+                        {{each value.sub_subject_text subject j}}
+                        ,&nbsp;
+                        <a href="{{subject.url}}" class="md-title">
+                            {{subject.text}}
+                        </a>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+            </div>
+            {{/each}}
+        </script>
+        <script type="text/javascript">
+            function render(type,current_page) {
+                $("#comic_list").html();
+                $("#loading-img").show();
+                if(type=="classification"){
+                    let classification = $("input[name='classification']").val();
+                    let state = $("input[name='state']").val();
+                    getClassificationResult(current_page,classification,state)
+                }else if(type=="artist"){
+                    let artist = $("input[name='artist']").val();
+                    getArtistResult(current_page,artist);
+                }else{
+                    return false;
+                }
+            }
+            var type = $("input[name='type']").val();
+            var current_page = $("input[name='current_page']").val();
+            render(type,current_page);
+            function getClassificationResult(current_page,classification,state)
+            {
+                $.ajax({
+                    url: "/index/classification/search",
+                    data: {
+                        page:current_page,
+                        classification:classification,
+                        state:state,
+                    },
+                    dataType: "json",
+                    traditional:true,
+                    success: function (result) {
+                        rederComicTemplate("classification",current_page,classification,state,result);
+                    }
+                })
+            }
+
+            function getArtistResult(current_page,artist){
+                $.ajax({
+                    url: "/index/classification/searchartist",
+                    data: {
+                        page:current_page,
+                        artist:artist,
+                    },
+                    dataType: "json",
+                    traditional:true,
+                    success: function (result) {
+                        rederComicTemplate("artist",current_page,artist,"",result);
+                    }
+                })
+            }
+            function rederComicTemplate(type,current_page,param,state,result){
+                $("#loading-img").hide();
+                // 使用template-web.js将数据渲染到页面
+                var data=result.data;
+                if(data.data.length>0) {
+                    var html = template('comic_list_tpl', data);
+                }else{
+                    var html = "<h4>no search result</h4>";
+                }
+                $("#comic_list").children(".row-eq-height").remove();
+                $("#comic_list").append(html);
+                if(data.pageNum==0){
+                    return false;
+                }
+                rederPageNum(current_page,data.pageNum,type,param);
+            }
+
+            function rederPageNum(current_page,pageNum,search_type,param){
+                $('#pagination').bootstrapPaginator({
+                    currentPage: current_page,//当前的请求页面。
+                    onPageClicked:function(e,originalEvent,type,page){
+                        if(search_type=="classification") {
+                            //window.location.href = "/index/classification/" + param + "/page/" + page + ".html";
+                            render("classification",page);
+                        }else if(search_type=="artist"){
+                            //window.location.href = "/index/classification/artist/name/" +param + "/page/" + page + ".html";
+                            render("artist",page);
+                        }
+                    },
+                    totalPages:pageNum ,//一共多少页。
+                    size:"normal",//应该是页眉的大小。
+                    bootstrapMajorVersion: 3,
+                    alignment:"right",
+                    numberOfPages:5,//一页列出多少数据。
+                    itemTexts: function (type, page, current) {
+                        switch (type) {
+                            case "first": return "<<";
+                            case "prev": return "<";
+                            case "next": return ">";
+                            case "last": return ">>";
+                            case "page": return page;
+                        }
+                    }
+                });
+            }
+        </script>
+        <!--/ row -->
+        {include file="public:footer" /}
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var url = window.location.href;
+                var element = $('ul.nav a').filter(function () {
+                    if (url.charAt(url.length - 1) == '/') {
+                        url = url.substring(0, url.length - 1);
+                    }
+
+                    return this.href == url;
+                }).parent();
+
+                if (element.is('li')) {
+                    element.addClass('active');
+                }
+            });
+        </script>
+    </div>
+</div>
+
+<script type="text/javascript">
+    // ===== Scroll to Top ====
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+            $('#return-to-top').fadeIn(200);    // Fade in the arrow
+        } else {
+            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+        }
+    });
+    $(document).ready($('#return-to-top').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 500);
+    }));
+</script>

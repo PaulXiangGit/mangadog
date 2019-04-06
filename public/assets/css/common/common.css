@@ -1,0 +1,28 @@
+.mt50{margin-top:50px;}
+.fr{float:right;}
+.fl{float:left;}
+input{outline:none;}
+select{outline:none;}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    　　outline: thin dotted;
+    　　outline: 5px auto -webkit-focus-ring-color;
+    　　outline-offset: -2px;
+}
+.fs12{font-size:12px;} .fs28{font-size:28px;} .fs15{font-size:15px;}
+.mb20{margin-bottom:20px;}
+.cb{color:black;}
+.cw{color:white;}
+.comic-cover-border{border:1px solid #dddddd;}
+.comic-cover-size{width:100px;height:140px;}
+.latest-chapter-name{color:#ffffff;}
+.latest-chapter-name:hover,.latest-chapter-name:focus{color:#007299;text-decoration: none;text-decoration: none;}
+a.thumbnail:hover,a.thumbnail:focus{border:1px solid #54c2f3;}
+.chapter-title-rtl a,.md-title{color:#54c2f3;}.md-title:hover,.md-title:focus,.chapter-title-rtl a:hover,.chapter-title-rtl a:focus{color:#007299;}
+.label-success{background-color:#54c2f3;cursor:pointer;}.label-success:hover,.label-success:focus{color:#007299}
+                                         .layout-boxed{background:url('/assets/img/frontend/common/web-background.jpg') repeat center}
+.chart-title{color:#ffffff;}.chart-title:hover{color:#0f3549;text-decoration: none;}

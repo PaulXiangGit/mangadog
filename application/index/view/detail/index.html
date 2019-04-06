@@ -1,0 +1,223 @@
+<!doctype html>
+<!--[if lt IE 8 ]><html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]><html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8"/>
+    {include file="public:seo_header" /}
+    {include file="public:link_resource" /}
+    <!--分页类-->
+    <script src="/assets/js/common/bootstrap-paginator.min.js"></script>
+    <!--分页类结束-->
+    <!--模板渲染-->
+    <script src="/assets/js/common/template-web.js"></script>
+    <!--模板渲染结束-->
+</head>
+<style>
+    .fb_iframe_widget span, .fb_iframe_widget span iframe {width: 100% !important;}
+    .bgw{background-color:white;}
+    dd>a{color:#54c2f3;}dd>a:hover,dd>a:focus{color:#007299;}
+</style>
+<body class=" layout-boxed " style="color:#000000;">
+
+<div class="wrapper">
+    <!-- Website Menu -->
+
+    {include file="public/header" /}
+
+
+    <!--/ Website Menu -->
+    <div class=" container ">
+        <input type="hidden" name="comic_id" value="{$comic_info.id}" />
+        <!-- row -->
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="widget-title fs" style="display: inline-block;">{$comic_info.name} Manga</h1>
+                <hr/>
+
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="boxed" style="width: 250px; height: auto;text-align:center;margin:0 auto;">
+                            <img class="img-responsive" src="{$image_prefix.$comic_info.image}"  alt='{$comic_info.image_alt}' style="width:200px;height:250px;"/>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <dl class="dl-horizontal">
+                            <dt>Status</dt>
+                            <dd>
+                                <span class="label label-success">{$comic_info.state}</span>
+                            </dd>
+                            <dt>Artist</dt>
+                            <dd>
+                                {if condition="!empty($comic_info.artist)"}
+                                    {volist name="comic_info.artist" id="vo" key="k"}
+                                        {if($k != 1)}
+                                            ,
+                                        {/if}
+                                        <a href="/artist/{$vo}.html" >
+                                            {$vo}
+                                        </a>
+                                    {/volist}
+                                {else/}
+                                    Anonymous
+                                {/if}
+                            </dd>
+                            <dt>Type</dt>
+                            <dd>
+                                manga
+                            </dd>
+                            <dt>Genres</dt>
+                            <dd>
+                                {volist name="classification_list" id="vo" key="k" }
+                                <a href="/genre/{$vo.search_name}.html" >
+                                    {if condition="$k!=1"},{/if}{$vo.name}
+                                </a>
+                                {/volist}
+                            </dd>
+                            <dt>Views</dt>
+                            <dd>{$comic_info.views}</dd>
+
+                        </dl>
+
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="well cw">
+                            <h2 class="fs15"><strong>{$comic_info.name} Mange English</strong></h2>
+                            <p>
+                                {$comic_info.intro}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <h2 class="widget-title" style="display: inline-block;">{$comic_info.name} Related Manga</h2>
+                <hr/>
+                <div class="row">
+                    <div class="col-lg-12">
+                        {volist name="recommend_comic_list" id="vo"}
+                        <div class="col-lg-3 col-sm-12 tcenter" >
+                            <a href="/detail/{$vo.search_name}.html">
+                                <img class="img-responsive w90 h90 l5" src="{$image_prefix.$vo.image}"  alt='{$vo.image_alt}' style="margin:0 auto;height:275px;width:95%;" />
+                            </a>
+                            <!--
+                            <a class="anone cblack" href="/index/classification/index/name/{$vo.main_subject_text}.html">{$vo.main_subject_text}</a><br/>
+                            -->
+                            <a class="anone md-title" href="/detail/{$vo.search_name}.html">{$vo.name}</a>
+                        </div>
+                        {/volist}
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12" style="color:#000000;min-height:620px;">
+                        <h2 class="widget-title">{$comic_info.name} Chapters</h2>
+                        <hr/>
+
+                        <ul class="chapters tcenter" id="chapters">
+                            <img src="/assets/img/frontend/common/loading.gif" style="margin:auto auto;" display="none"/>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="row col-sm-12 tcenter" style="padding-left:50px;">
+                    <ul id="pagination">
+
+                    </ul>
+                </div>
+                <!-- comment -->
+                <div class="hrule"><br/></div>
+                <div id="fb-root"></div>
+                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2">
+                </script>
+
+                <div class="row" style="margin:15px auto;">
+                    <div class="col-xs-12">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#fb" aria-controls="fb" role="tab" data-toggle="tab">Facebook</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="fb">
+                                <div class="fb-comments"   data-width="1000px" data-numposts="5"   >
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ row -->
+
+        {include file="public:footer"/}
+        {include file="public:return_to_top"/}
+    </div>
+</div>
+</div>
+<script id="chapter_list_tpl" type="text/html">
+    {{each data value i}}
+    <li style="padding: 3px 0;" class="volume-">
+        <h5 class="chapter-title-rtl text-left">
+            <a href="/read/{$comic_info.search_name}/{{value.id}}.html" >{$comic_info.name} Manga {{value.name}}</a>
+        </h5>
+        <div class="action ">
+            <div style="float:right" class="date-chapter-title-rtl hidden-xs">
+                {{value.create_date}}
+            </div>
+        </div>
+    </li>
+    {{/each}}
+</script>
+<script>
+    var comic_id = $("input[name='comic_id']").val();
+    function render(page,comic_id) {
+        $("#chapters").children("img").show();
+        $("#chapters li").remove();
+        $.ajax({
+            url: "/index/detail/getChapterList",
+            data: {
+                comic_id:comic_id,
+                page:page
+            },
+            dataType: "json",
+                traditional:true,
+                success: function (result) {
+                    var data=result.data;
+                    if(data.data.length>0) {
+                        var html = template('chapter_list_tpl', data);
+                    }else{
+                        var html = "<h4>no search result</h4>";
+                    }
+                    $("#chapters").children("img").hide();
+                    $("#chapters").append(html);
+                    $('#pagination').bootstrapPaginator({
+                        currentPage: page,//当前的请求页面。
+                        onPageClicked:function(e,originalEvent,type,page){
+                            render(page,comic_id);
+                        },
+                        totalPages:data.pageNum ,//一共多少页。
+                        size:"normal",//应该是页眉的大小。
+                        bootstrapMajorVersion: 3,
+                        alignment:"right",
+                        numberOfPages:5,//一页列出多少数据。
+                        itemTexts: function (type, page, current) {
+                            switch (type) {
+                                case "first": return "<<";
+                                case "prev": return "<";
+                                case "next": return ">";
+                                case "last": return ">>";
+                                case "page": return page;
+                            }
+                        }
+                    });
+            }
+        });
+    }
+    render(1,comic_id);
+</script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!doctype html>
+<!--[if lt IE 8 ]><html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]><html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    {include file="public:seo_header" /}
+    {include file="public:link_resource" /}
+
+    <script>
+    if (window != top)
+        top.location.href = location.href
+    </script>
+
+</head>
+<style>
+
+</style>
+<body class=" layout-boxed ">
+<div class="wrapper">
+    <!-- Website Menu -->
+
+    {include file="public/header" /}
+
+    <!--/ Website Menu -->
+    <div class=" container ">
+        <!-- row -->
+        <div class="row">
+            <div class="col-sm-12">
+            </div>
+        </div>
+        <!--/ row -->
+
+        <!-- row -->
+        <div class="row">
+
+            <div class="col-sm-4 col-sm-push-8 mt50">
+
+                <!-- About Me -->
+                <div class="alert alert-success text-center" style="margin: 0px;background-color:#315c73;border:1px solid #315c73;color:#a6c3d2;">
+                    <div class="about">
+                        <h2>{$seo_config.content_right.title}</h2>
+                        <h6 style="margin:15px auto;">{$seo_config.content_right.description}</h6>
+                        <p class="hidden-xs">
+                           {$seo_config.content_right.keywords}
+                        </p>
+                    </div>
+                </div>
+                <!--/ About Me -->
+                <div class="panel panel-success hidden-xs mt50" style="border:1px solid #54c2f3;">
+                    <div class="panel-heading" style="background-color:#54c2f3;">
+                        <h3 class="panel-title"><strong>Top Manga</strong></h3>
+                    </div>
+                    <ul>
+                        {volist name="top_rank_list" id="vo"}
+                        <li class="list-group-item">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="/detail/{$vo.search_name}.html">
+                                        <img src="{$image_prefix.$vo.image}" alt='{$vo.name}' style="width:50px;height:50px;">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h5 class="media-heading"><a href="/detail/{$vo.search_name}.html" class="chart-title" ><strong>{$vo.name}</strong></a></h5>
+                                    <i class="fa fa-eye"></i> {$vo.views}
+                                </div>
+                            </div>
+                        </li>
+                        {/volist}
+                    </ul>
+                </div>
+
+                <div style="clear:both"></div>
+            </div>
+            <div class="col-sm-8 col-sm-pull-4">
+                <div class="col-sm-12" style="padding: 0px;color:#000000;">
+                    <h2 class="hotmanga-header"><i class="fa fa-star"></i>Hot Manga Updates</h2>
+                    <hr/>
+
+                    <ul class="hot-thumbnails">
+                        {volist name="comic_list" id="vo" }
+                        <li class="col-sm-4">
+                            <div class="photo" style="position: relative;">
+                                <div class="manga-name">
+                                    <a class="label label-warning" href="/detail/{$vo.search_name}.html">
+                                        {$vo.name}
+                                    </a>
+                                </div>
+                                <a class="thumbnail" style="position: relative; /*z-index: 10;*/ background: rgb(255, 255, 255) none repeat scroll 0% 0%;" href="/detail/{$vo.search_name}.html">
+                                    <img src="{$image_prefix.$vo.image}"  alt='{$vo.image_alt}' style="height:275px;width:95%;" />
+                                </a>
+                                <div class="well" style="background-color:#54c2f3;">
+                                    <a href="/read/{$vo.search_name}/{$vo.latest_chapter_id}.html" >
+                                        <p  class="latest-chapter-name">
+                                            <i class="fa fa-book"></i>
+                                            {$vo.latest_chapter_name}
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        {/volist}
+                    </ul>
+                </div>
+                <div style="clear:both"></div>
+            </div>
+        </div>
+        <!--/ row -->
+
+        {include file="public:footer" /}
+
+
+        <script>
+            $(document).ready(function () {
+                var url = window.location.href;
+                var element = $('ul.nav a').filter(function () {
+                    if (url.charAt(url.length - 1) == '/') {
+                        url = url.substring(0, url.length - 1);
+                    }
+
+                    return this.href == url;
+                }).parent();
+
+                if (element.is('li')) {
+                    element.addClass('active');
+                }
+            });
+        </script>
+    </div>
+</div>
+</div>
+{include file="public:return_to_top" /}
+</body>
+</html>

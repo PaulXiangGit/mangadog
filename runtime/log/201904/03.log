@@ -1,0 +1,2078 @@
+---------------------------------------------------------------
+[ 2019-04-03T08:52:35+08:00 ] 127.0.0.1 GET /index/classification/search?page=1&classification=238&state=
+[ info ] 127.0.0.1:8090/index/classification/search?page=1&classification=238&state= [运行时间：30.372051s][吞吐率：0.03req/s] [内存消耗：3,325.65kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000299s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.051678s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'classification',
+    2 => 'search',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8090',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'classification' => '238',
+  'state' => '',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.012438s ]
+[ info ] [ RUN ] app\index\controller\Classification->search[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Classification.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1]Maximum execution time of 30 seconds exceeded[E:\phpStudy\WWW\haiyounet\comic\thinkphp\library\think\db\Connection.php:370]
+---------------------------------------------------------------
+[ 2019-04-03T08:52:35+08:00 ] 127.0.0.1 GET /favicon.ico
+[ info ] 127.0.0.1:8090/favicon.ico [运行时间：0.100124s][吞吐率：9.99req/s] [内存消耗：1,684.28kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002927s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:8090/index/classification/search?page=1&classification=238&state=',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T08:53:19+08:00 ] 127.0.0.1 GET /index/
+[ info ] 127.0.0.1:8090/index/ [运行时间：14.946556s][吞吐率：0.07req/s] [内存消耗：3,523.34kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006009s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000579s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'comic_list',
+  7 => 'top_rank_list',
+  8 => 'seo_config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T08:57:40+08:00 ] 127.0.0.1 GET /index/classification.html
+[ info ] 127.0.0.1:8090/index/classification.html [运行时间：3.910975s][吞吐率：0.26req/s] [内存消耗：3,527.59kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000055s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003771s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'classification',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:8090/index/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000811s ]
+[ info ] [ RUN ] app\index\controller\Classification->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Classification.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\classification\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'classification',
+  7 => 'classification_list',
+  8 => 'classification_text',
+  9 => 'page',
+  10 => 'state',
+  11 => 'seo_config',
+  12 => 'type',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: artist[E:\phpStudy\WWW\haiyounet\comic\runtime\temp\55ec1333afda4e5d322eea01a2971182.php:215]
+---------------------------------------------------------------
+[ 2019-04-03T08:58:10+08:00 ] 127.0.0.1 GET /index/classification/search?page=1&classification=&state=
+[ info ] 127.0.0.1:8090/index/classification/search?page=1&classification=&state= [运行时间：30.302970s][吞吐率：0.03req/s] [内存消耗：3,329.54kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000057s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003365s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'classification',
+    2 => 'search',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:8090/index/classification.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8090',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'classification' => '',
+  'state' => '',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000594s ]
+[ info ] [ RUN ] app\index\controller\Classification->search[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Classification.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1]Maximum execution time of 30 seconds exceeded[E:\phpStudy\WWW\haiyounet\comic\thinkphp\library\think\db\Connection.php:370]
+---------------------------------------------------------------
+[ 2019-04-03T08:59:33+08:00 ] 127.0.0.1 GET /index/classification.html
+[ info ] 127.0.0.1:8090/index/classification.html [运行时间：3.515780s][吞吐率：0.28req/s] [内存消耗：3,353.09kb] [文件加载：71]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000052s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003481s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'classification',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:8090/index/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000587s ]
+[ info ] [ RUN ] app\index\controller\Classification->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Classification.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\classification\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'classification',
+  7 => 'classification_list',
+  8 => 'classification_text',
+  9 => 'page',
+  10 => 'state',
+  11 => 'seo_config',
+  12 => 'type',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: artist[E:\phpStudy\WWW\haiyounet\comic\runtime\temp\55ec1333afda4e5d322eea01a2971182.php:215]
+---------------------------------------------------------------
+[ 2019-04-03T08:59:49+08:00 ] 127.0.0.1 GET /index/
+[ info ] 127.0.0.1:8090/index/ [运行时间：14.163955s][吞吐率：0.07req/s] [内存消耗：3,343.21kb] [文件加载：71]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000274s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004096s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001321s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'comic_list',
+  7 => 'top_rank_list',
+  8 => 'seo_config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T09:00:03+08:00 ] 127.0.0.1 GET /index/classification/search?page=1&classification=&state=
+[ info ] 127.0.0.1:8090/index/classification/search?page=1&classification=&state= [运行时间：30.268721s][吞吐率：0.03req/s] [内存消耗：3,329.54kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000065s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.008698s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'classification',
+    2 => 'search',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:8090/index/classification.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8090',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'classification' => '',
+  'state' => '',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000640s ]
+[ info ] [ RUN ] app\index\controller\Classification->search[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Classification.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1]Maximum execution time of 30 seconds exceeded[E:\phpStudy\WWW\haiyounet\comic\thinkphp\library\think\db\Connection.php:370]
+---------------------------------------------------------------
+[ 2019-04-03T09:00:17+08:00 ] 127.0.0.1 GET /index/classification.html
+[ info ] 127.0.0.1:8090/index/classification.html [运行时间：3.730407s][吞吐率：0.27req/s] [内存消耗：3,352.81kb] [文件加载：71]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000061s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004975s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'classification',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:8090/index/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000772s ]
+[ info ] [ RUN ] app\index\controller\Classification->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Classification.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\classification\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'classification',
+  7 => 'classification_list',
+  8 => 'classification_text',
+  9 => 'page',
+  10 => 'state',
+  11 => 'seo_config',
+  12 => 'type',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: artist[E:\phpStudy\WWW\haiyounet\comic\runtime\temp\55ec1333afda4e5d322eea01a2971182.php:215]
+---------------------------------------------------------------
+[ 2019-04-03T09:00:47+08:00 ] 127.0.0.1 GET /index/classification/search?page=1&classification=&state=
+[ info ] 127.0.0.1:8090/index/classification/search?page=1&classification=&state= [运行时间：30.125472s][吞吐率：0.03req/s] [内存消耗：3,361.23kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000066s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005516s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'classification',
+    2 => 'search',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:8090/index/classification.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8090',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'classification' => '',
+  'state' => '',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000632s ]
+[ info ] [ RUN ] app\index\controller\Classification->search[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Classification.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1]Maximum execution time of 30 seconds exceeded[E:\phpStudy\WWW\haiyounet\comic\thinkphp\library\think\db\Connection.php:381]
+---------------------------------------------------------------
+[ 2019-04-03T09:04:48+08:00 ] 127.0.0.1 GET /index
+[ info ] 127.0.0.1:8090/index [运行时间：14.029046s][吞吐率：0.07req/s] [内存消耗：3,343.40kb] [文件加载：71]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000053s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003991s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:8090/index/classification.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000836s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'comic_list',
+  7 => 'top_rank_list',
+  8 => 'seo_config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T09:05:02+08:00 ] 127.0.0.1 GET /index/read/index/comic_id/1007/chapter_id/54364.html
+[ info ] 127.0.0.1:8090/index/read/index/comic_id/1007/chapter_id/54364.html [运行时间：8.696335s][吞吐率：0.11req/s] [内存消耗：4,304.02kb] [文件加载：71]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000061s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003943s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'read',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:8090/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8090',
+)
+[ info ] [ PARAM ] array (
+  'comic_id' => '1007',
+  'chapter_id' => '54364',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000642s ]
+[ info ] [ RUN ] app\index\controller\Read->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Read.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\read\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'comic_info',
+  7 => 'chapter_info',
+  8 => 'chapter_list',
+  9 => 'last_chapter_link',
+  10 => 'next_chapter_link',
+  11 => 'image_list',
+  12 => 'seo_config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T09:10:51+08:00 ] 127.0.0.1 GET /index/read/index/comic_id/1007/chapter_id/54363.html
+[ info ] 127.0.0.1:8090/index/read/index/comic_id/1007/chapter_id/54363.html [运行时间：8.337468s][吞吐率：0.12req/s] [内存消耗：3,892.51kb] [文件加载：69]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000303s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004328s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'read',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1:8090/index/read/index/comic_id/1007/chapter_id/54364.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8090',
+)
+[ info ] [ PARAM ] array (
+  'comic_id' => '1007',
+  'chapter_id' => '54363',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001071s ]
+[ info ] [ RUN ] app\index\controller\Read->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Read.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\read\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'comic_info',
+  7 => 'chapter_info',
+  8 => 'chapter_list',
+  9 => 'last_chapter_link',
+  10 => 'next_chapter_link',
+  11 => 'image_list',
+  12 => 'seo_config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T10:25:05+08:00 ] 0.0.0.0 GET /index/
+[ info ] localhost:8090/index/ [运行时间：14.566945s][吞吐率：0.07req/s] [内存消耗：3,523.34kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000289s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.009333s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000941s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'comic_list',
+  7 => 'top_rank_list',
+  8 => 'seo_config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T10:25:35+08:00 ] 0.0.0.0 GET /index/detail/index/comic_id/426.html
+[ info ] localhost:8090/index/detail/index/comic_id/426.html [运行时间：13.524674s][吞吐率：0.07req/s] [内存消耗：3,489.13kb] [文件加载：71]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000071s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.012734s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'detail',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8090/index/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+  'comic_id' => '426',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000660s ]
+[ info ] [ RUN ] app\index\controller\Detail->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Detail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\detail\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'classification_list',
+  7 => 'comic_info',
+  8 => 'recommend_comic_list',
+  9 => 'seo_config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T10:25:40+08:00 ] 0.0.0.0 GET /index/detail/getChapterList?comic_id=426&page=1
+[ info ] localhost:8090/index/detail/getChapterList?comic_id=426&page=1 [运行时间：4.650940s][吞吐率：0.22req/s] [内存消耗：3,196.40kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000061s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003184s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'detail',
+    2 => 'getChapterList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8090/index/detail/index/comic_id/426.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+  'comic_id' => '426',
+  'page' => '1',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000645s ]
+[ info ] [ RUN ] app\index\controller\Detail->getChapterList[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Detail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T10:25:51+08:00 ] 0.0.0.0 GET /index/read/index/comic_id/426/chapter_id/27350.html
+[ info ] localhost:8090/index/read/index/comic_id/426/chapter_id/27350.html [运行时间：8.456521s][吞吐率：0.12req/s] [内存消耗：4,527.87kb] [文件加载：71]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000051s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003504s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'read',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8090/index/detail/index/comic_id/426.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+  'comic_id' => '426',
+  'chapter_id' => '27350',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000571s ]
+[ info ] [ RUN ] app\index\controller\Read->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Read.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\read\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'comic_info',
+  7 => 'chapter_info',
+  8 => 'chapter_list',
+  9 => 'last_chapter_link',
+  10 => 'next_chapter_link',
+  11 => 'image_list',
+  12 => 'seo_config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T11:22:50+08:00 ] 0.0.0.0 GET /index/read/index/comic_id/426/chapter_id/27350.html
+[ info ] localhost:8090/index/read/index/comic_id/426/chapter_id/27350.html [运行时间：8.880107s][吞吐率：0.11req/s] [内存消耗：4,528.65kb] [文件加载：71]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000049s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006563s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'read',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8090/index/detail/index/comic_id/426.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+  'comic_id' => '426',
+  'chapter_id' => '27350',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001404s ]
+[ info ] [ RUN ] app\index\controller\Read->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Read.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\read\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'comic_info',
+  7 => 'chapter_info',
+  8 => 'chapter_list',
+  9 => 'last_chapter_link',
+  10 => 'next_chapter_link',
+  11 => 'image_list',
+  12 => 'seo_config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T11:36:00+08:00 ] 0.0.0.0 GET /index
+[ info ] localhost:8090/index [运行时间：15.926154s][吞吐率：0.06req/s] [内存消耗：3,343.43kb] [文件加载：71]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000292s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006204s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8090/index/read/index/comic_id/426/chapter_id/27350.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000937s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'comic_list',
+  7 => 'top_rank_list',
+  8 => 'seo_config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T11:41:06+08:00 ] 0.0.0.0 GET /index
+[ info ] localhost:8090/index [运行时间：20.681468s][吞吐率：0.05req/s] [内存消耗：3,523.84kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000051s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004368s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8090/index/read/index/comic_id/426/chapter_id/27350.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000799s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'comic_list',
+  7 => 'top_rank_list',
+  8 => 'seo_config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T11:41:34+08:00 ] 0.0.0.0 GET /index/detail/index/comic_id/294.html
+[ info ] localhost:8090/index/detail/index/comic_id/294.html [运行时间：12.756847s][吞吐率：0.08req/s] [内存消耗：3,318.45kb] [文件加载：69]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000061s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003684s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'detail',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8090/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+  'comic_id' => '294',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000685s ]
+[ info ] [ RUN ] app\index\controller\Detail->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Detail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\detail\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'classification_list',
+  7 => 'comic_info',
+  8 => 'recommend_comic_list',
+  9 => 'seo_config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T11:45:58+08:00 ] 0.0.0.0 GET /index
+[ info ] localhost:8090/index [运行时间：15.312005s][吞吐率：0.07req/s] [内存消耗：3,343.71kb] [文件加载：71]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000324s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004240s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8090/index/read/index/comic_id/426/chapter_id/27350.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001093s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'comic_list',
+  7 => 'top_rank_list',
+  8 => 'seo_config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T11:55:26+08:00 ] 0.0.0.0 GET /index
+[ info ] localhost:8090/index [运行时间：14.831955s][吞吐率：0.07req/s] [内存消耗：3,343.71kb] [文件加载：71]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000359s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005377s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8090/index/read/index/comic_id/426/chapter_id/27350.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000903s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'comic_list',
+  7 => 'top_rank_list',
+  8 => 'seo_config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T11:57:26+08:00 ] 0.0.0.0 GET /index
+[ info ] localhost:8090/index [运行时间：12.580804s][吞吐率：0.08req/s] [内存消耗：3,220.02kb] [文件加载：71]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000059s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003820s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8090/index/read/index/comic_id/426/chapter_id/27350.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000770s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2006]SQLSTATE[HY000] [2006] MySQL server has gone away[E:\phpStudy\WWW\haiyounet\comic\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2019-04-03T11:57:26+08:00 ] 0.0.0.0 GET /favicon.ico
+[ info ] localhost:8090/favicon.ico [运行时间：0.040229s][吞吐率：24.86req/s] [内存消耗：1,684.55kb] [文件加载：49]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000053s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003145s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'favicon.ico',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8090/index',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T12:00:23+08:00 ] 0.0.0.0 GET /index
+[ info ] localhost:8090/index [运行时间：130.021681s][吞吐率：0.01req/s] [内存消耗：3,251.91kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000053s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003284s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8090/index/read/index/comic_id/426/chapter_id/27350.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000706s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1]Maximum execution time of 30 seconds exceeded[E:\phpStudy\WWW\haiyounet\comic\thinkphp\library\think\db\Connection.php:295]
+---------------------------------------------------------------
+[ 2019-04-03T12:20:20+08:00 ] 0.0.0.0 GET /index
+[ info ] localhost:8090/index [运行时间：15.266461s][吞吐率：0.07req/s] [内存消耗：3,523.84kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000267s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004417s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8090/index/read/index/comic_id/426/chapter_id/27350.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000902s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'comic_list',
+  7 => 'top_rank_list',
+  8 => 'seo_config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T12:28:38+08:00 ] 0.0.0.0 GET /index
+[ info ] localhost:8090/index [运行时间：14.260148s][吞吐率：0.07req/s] [内存消耗：3,343.71kb] [文件加载：71]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000287s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004445s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8090/index/read/index/comic_id/426/chapter_id/27350.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000931s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'comic_list',
+  7 => 'top_rank_list',
+  8 => 'seo_config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T13:36:31+08:00 ] 0.0.0.0 GET /index
+[ info ] localhost:8090/index [运行时间：14.742070s][吞吐率：0.07req/s] [内存消耗：3,343.71kb] [文件加载：71]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000291s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.006094s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8090/index/read/index/comic_id/426/chapter_id/27350.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001032s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'comic_list',
+  7 => 'top_rank_list',
+  8 => 'seo_config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T13:38:53+08:00 ] 0.0.0.0 GET /index/detail/index/comic_id/83.html
+[ info ] localhost:8090/index/detail/index/comic_id/83.html [运行时间：13.756215s][吞吐率：0.07req/s] [内存消耗：3,320.36kb] [文件加载：69]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000051s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004108s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'detail',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8090/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+  'comic_id' => '83',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000776s ]
+[ info ] [ RUN ] app\index\controller\Detail->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Detail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\detail\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'classification_list',
+  7 => 'comic_info',
+  8 => 'recommend_comic_list',
+  9 => 'seo_config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T13:38:57+08:00 ] 0.0.0.0 GET /index/detail/getChapterList?comic_id=83&page=1
+[ info ] localhost:8090/index/detail/getChapterList?comic_id=83&page=1 [运行时间：4.407496s][吞吐率：0.23req/s] [内存消耗：3,195.63kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000058s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004382s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'detail',
+    2 => 'getChapterList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8090/index/detail/index/comic_id/83.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+  'comic_id' => '83',
+  'page' => '1',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000580s ]
+[ info ] [ RUN ] app\index\controller\Detail->getChapterList[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Detail.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T13:40:15+08:00 ] 0.0.0.0 GET /index
+[ info ] localhost:8090/index [运行时间：16.037063s][吞吐率：0.06req/s] [内存消耗：3,523.81kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000052s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003062s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8090/index/read/index/comic_id/426/chapter_id/27350.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000757s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'comic_list',
+  7 => 'top_rank_list',
+  8 => 'seo_config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T13:41:24+08:00 ] 0.0.0.0 GET /index
+[ info ] localhost:8090/index [运行时间：15.246424s][吞吐率：0.07req/s] [内存消耗：3,343.69kb] [文件加载：71]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000052s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003695s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8090/index/read/index/comic_id/426/chapter_id/27350.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000742s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'comic_list',
+  7 => 'top_rank_list',
+  8 => 'seo_config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T13:43:03+08:00 ] 0.0.0.0 GET /index
+[ info ] localhost:8090/index [运行时间：14.941987s][吞吐率：0.07req/s] [内存消耗：3,523.81kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000295s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004647s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8090/index/read/index/comic_id/426/chapter_id/27350.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001220s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'comic_list',
+  7 => 'top_rank_list',
+  8 => 'seo_config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T13:45:05+08:00 ] 0.0.0.0 GET /index
+[ info ] localhost:8090/index [运行时间：14.560137s][吞吐率：0.07req/s] [内存消耗：3,523.81kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000053s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004230s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8090/index/read/index/comic_id/426/chapter_id/27350.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000784s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'comic_list',
+  7 => 'top_rank_list',
+  8 => 'seo_config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T13:49:40+08:00 ] 0.0.0.0 GET /index/classification.html
+[ info ] localhost:8090/index/classification.html [运行时间：3.638905s][吞吐率：0.27req/s] [内存消耗：3,537.63kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003757s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'classification',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8090/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000802s ]
+[ info ] [ RUN ] app\index\controller\Classification->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Classification.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\classification\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'classification',
+  7 => 'classification_list',
+  8 => 'classification_text',
+  9 => 'page',
+  10 => 'state',
+  11 => 'seo_config',
+  12 => 'type',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: artist[E:\phpStudy\WWW\haiyounet\comic\runtime\temp\55ec1333afda4e5d322eea01a2971182.php:215]
+---------------------------------------------------------------
+[ 2019-04-03T13:50:10+08:00 ] 0.0.0.0 GET /index/classification/search?page=1&classification=&state=
+[ info ] localhost:8090/index/classification/search?page=1&classification=&state= [运行时间：30.097172s][吞吐率：0.03req/s] [内存消耗：3,329.05kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000054s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005207s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'classification',
+    2 => 'search',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8090/index/classification.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'classification' => '',
+  'state' => '',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000737s ]
+[ info ] [ RUN ] app\index\controller\Classification->search[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Classification.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1]Maximum execution time of 30 seconds exceeded[E:\phpStudy\WWW\haiyounet\comic\thinkphp\library\think\db\Connection.php:370]
+---------------------------------------------------------------
+[ 2019-04-03T13:51:53+08:00 ] 0.0.0.0 GET /index/classification/index/classification/199.html
+[ info ] localhost:8090/index/classification/index/classification/199.html [运行时间：4.232828s][吞吐率：0.24req/s] [内存消耗：3,360.02kb] [文件加载：71]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000497s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004318s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'classification',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8090/index/classification.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+  'classification' => '199',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000916s ]
+[ info ] [ RUN ] app\index\controller\Classification->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Classification.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\classification\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'classification',
+  7 => 'classification_list',
+  8 => 'classification_text',
+  9 => 'page',
+  10 => 'state',
+  11 => 'seo_config',
+  12 => 'type',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: artist[E:\phpStudy\WWW\haiyounet\comic\runtime\temp\55ec1333afda4e5d322eea01a2971182.php:215]
+---------------------------------------------------------------
+[ 2019-04-03T13:52:23+08:00 ] 0.0.0.0 GET /index/classification/search?page=1&classification=199&state=
+[ info ] localhost:8090/index/classification/search?page=1&classification=199&state= [运行时间：30.292483s][吞吐率：0.03req/s] [内存消耗：3,360.52kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000065s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.005180s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'classification',
+    2 => 'search',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8090/index/classification/index/classification/199.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'classification' => '199',
+  'state' => '',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000777s ]
+[ info ] [ RUN ] app\index\controller\Classification->search[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Classification.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1]Maximum execution time of 30 seconds exceeded[E:\phpStudy\WWW\haiyounet\comic\thinkphp\library\think\db\Connection.php:381]
+---------------------------------------------------------------
+[ 2019-04-03T13:54:16+08:00 ] 0.0.0.0 GET /index/
+[ info ] localhost:8090/index/ [运行时间：14.303770s][吞吐率：0.07req/s] [内存消耗：3,343.19kb] [文件加载：71]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000059s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003867s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000985s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'comic_list',
+  7 => 'top_rank_list',
+  8 => 'seo_config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T13:54:24+08:00 ] 0.0.0.0 GET /index/classification.html
+[ info ] localhost:8090/index/classification.html [运行时间：3.658595s][吞吐率：0.27req/s] [内存消耗：3,537.63kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000053s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003500s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'classification',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8090/index/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000609s ]
+[ info ] [ RUN ] app\index\controller\Classification->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Classification.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\classification\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'classification',
+  7 => 'classification_list',
+  8 => 'classification_text',
+  9 => 'page',
+  10 => 'state',
+  11 => 'seo_config',
+  12 => 'type',
+) ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]未定义变量: artist[E:\phpStudy\WWW\haiyounet\comic\runtime\temp\55ec1333afda4e5d322eea01a2971182.php:215]
+---------------------------------------------------------------
+[ 2019-04-03T13:54:54+08:00 ] 0.0.0.0 GET /index/classification/search?page=1&classification=&state=
+[ info ] localhost:8090/index/classification/search?page=1&classification=&state= [运行时间：30.292428s][吞吐率：0.03req/s] [内存消耗：3,360.19kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000059s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003408s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'classification',
+    2 => 'search',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost:8090/index/classification.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'classification' => '',
+  'state' => '',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000639s ]
+[ info ] [ RUN ] app\index\controller\Classification->search[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Classification.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1]Maximum execution time of 30 seconds exceeded[E:\phpStudy\WWW\haiyounet\comic\thinkphp\library\think\db\Connection.php:381]
+---------------------------------------------------------------
+[ 2019-04-03T16:39:31+08:00 ] 127.0.0.1 GET /index/latestupdate/getUpdateResult/page/1.html
+[ info ] 127.0.0.1:8090/index/latestupdate/getUpdateResult/page/1.html [运行时间：11.943124s][吞吐率：0.08req/s] [内存消耗：3,191.80kb] [文件加载：67]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000315s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.042338s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'latestupdate',
+    2 => 'getUpdateResult',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => '127.0.0.1:8090',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000947s ]
+[ info ] [ RUN ] app\index\controller\Latestupdate->getUpdateResult[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Latestupdate.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T16:57:46+08:00 ] 0.0.0.0 GET /index/
+[ info ] localhost:8090/index/ [运行时间：14.912986s][吞吐率：0.07req/s] [内存消耗：3,529.79kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000303s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003799s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.001039s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'comic_list',
+  7 => 'top_rank_list',
+  8 => 'seo_config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T16:59:25+08:00 ] 0.0.0.0 GET /index/
+[ info ] localhost:8090/index/ [运行时间：16.640031s][吞吐率：0.06req/s] [内存消耗：3,529.98kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000060s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003021s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000580s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'comic_list',
+  7 => 'top_rank_list',
+  8 => 'seo_config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T17:02:23+08:00 ] 0.0.0.0 GET /index/
+[ info ] localhost:8090/index/ [运行时间：14.293338s][吞吐率：0.07req/s] [内存消耗：3,530.10kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000056s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003802s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000908s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'comic_list',
+  7 => 'top_rank_list',
+  8 => 'seo_config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T17:03:37+08:00 ] 0.0.0.0 GET /index/
+[ info ] localhost:8090/index/ [运行时间：15.934530s][吞吐率：0.06req/s] [内存消耗：3,530.10kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000052s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.003071s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000533s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'comic_list',
+  7 => 'top_rank_list',
+  8 => 'seo_config',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-04-03T17:04:47+08:00 ] 0.0.0.0 GET /index/
+[ info ] localhost:8090/index/ [运行时间：14.143073s][吞吐率：0.07req/s] [内存消耗：3,530.60kb] [文件加载：73]
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000050s ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.004166s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.86 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'localhost:8090',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\lang\zh-cn.php
+[ info ] [ BEHAVIOR ] Run app\common\behavior\Common @module_init [ RunTime:0.000793s ]
+[ info ] [ LANG ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index/lang/zh-cn/index.php
+[ info ] [ RUN ] app\index\controller\Index->index[ E:\phpStudy\WWW\haiyounet\comic\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] E:\phpStudy\WWW\haiyounet\comic\public/../application/index\view\index\index.html [ array (
+  0 => 'user',
+  1 => 'image_prefix',
+  2 => 'site',
+  3 => 'config',
+  4 => 'now',
+  5 => 'facebook_app_id',
+  6 => 'comic_list',
+  7 => 'top_rank_list',
+  8 => 'seo_config',
+) ]
+[ info ] [ LOG ] INIT File
